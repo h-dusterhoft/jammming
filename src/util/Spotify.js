@@ -1,4 +1,5 @@
-const clientId = '704632b823c94ab28f6a2b1bd0a80b10';
+require('dotenv').config();
+const clientId = process.env.SPOTIFY_CLIENT_ID;
 const redirectUri = 'http://localhost:3000/';
 let accessToken;
 
